@@ -1,0 +1,141 @@
+/*!* Space out content a bit *!*/
+/*body {*/
+/*padding-top: 20px;*/
+/*padding-bottom: 20px;*/
+/*}*/
+
+/*!* Everything but the jumbotron gets side spacing for mobile first views *!*/
+/*.header,*/
+/*.marketing,*/
+/*.footer {*/
+/*padding-right: 15px;*/
+/*padding-left: 15px;*/
+/*}*/
+
+/*!* Custom page header *!*/
+/*.header {*/
+/*padding-bottom: 20px;*/
+/*border-bottom: 1px solid #e5e5e5;*/
+/*}*/
+/*!* Make the masthead heading the same height as the navigation *!*/
+/*.header h3 {*/
+/*margin-top: 0;*/
+/*margin-bottom: 0;*/
+/*line-height: 40px;*/
+/*}*/
+
+/*!* Custom page footer *!*/
+/*.footer {*/
+/*padding-top: 19px;*/
+/*color: #777;*/
+/*border-top: 1px solid #e5e5e5;*/
+/*}*/
+
+/*!* Customize container *!*/
+/*@media (min-width: 768px) {*/
+/*.container {*/
+/*max-width: 730px;*/
+/*}*/
+/*}*/
+/*.container-narrow > hr {*/
+/*margin: 30px 0;*/
+/*}*/
+
+/*!* Main marketing message and sign up button *!*/
+/*.jumbotron {*/
+/*text-align: center;*/
+/*border-bottom: 1px solid #e5e5e5;*/
+/*}*/
+
+/*!* Supporting marketing content *!*/
+/*.marketing {*/
+/*margin: 40px 0;*/
+/*}*/
+/*.marketing p + h4 {*/
+/*margin-top: 28px;*/
+/*}*/
+
+/*!* Responsive: Portrait tablets and up *!*/
+/*@media screen and (min-width: 768px) {*/
+/*!* Remove the padding we set earlier *!*/
+/*.header,*/
+/*.marketing,*/
+/*.footer {*/
+/*padding-right: 0;*/
+/*padding-left: 0;*/
+/*}*/
+/*!* Space out the masthead *!*/
+/*.header {*/
+/*margin-bottom: 30px;*/
+/*}*/
+/*!* Remove the bottom border on the jumbotron for visual effect *!*/
+/*.jumbotron {*/
+/*border-bottom: 0;*/
+/*}*/
+/*}*/
+
+/*.table-container {*/
+/*display: table;*/
+/*}*/
+
+/*.table-container .table-row {*/
+/*height: 100%;*/
+/*display: table-row;*/
+/*}*/
+
+/*.table-container .table-row .table-col {*/
+/*display: table-cell;*/
+/*float: none;*/
+/*vertical-align: top;*/
+/*}*/
+
+html, body {
+    height: 100%;
+    margin: 0;
+    padding: 0
+}
+
+.header1 {
+    padding: 0;
+    border-radius: 0;
+}
+
+.header2 {
+    background-color: orange;
+    padding: 3em;
+    border-radius: 0;
+}
+
+.main-content {
+    padding: 0 3em 1em;
+}
+
+.vertical-center {
+    min-height: 100%; /* Fallback for browsers do NOT support vh unit */
+    min-height: 100vh; /* These two lines are counted as one :-)       */
+
+    display: flex;
+    align-items: center;
+}
+
+.calculate-button {
+    background-color: green;
+}
+
+.calculate-button:hover, .calculate-button:focus {
+    background-color: orange;
+}
+
+.container-main {
+    background-color: ghostwhite;
+    padding: 5px;
+}
+
+.carousel-container {
+    width: 100%;
+    min-height: 75vh;
+}
+
+.preview-image {
+    margin: 20%;
+}

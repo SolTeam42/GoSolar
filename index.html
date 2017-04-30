@@ -1,0 +1,192 @@
+<!doctype html>
+<html class="no-js" lang="">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
+
+    <title>GoSolar</title>
+    <meta name="description" content="">
+
+    <link rel="apple-touch-icon" href="apple-touch-icon.png">
+    <!-- Place favicon.ico in the root directory -->
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
+
+    <!--<link rel="stylesheet" href="css/normalize.css">-->
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+<!--[if lt IE 8]>
+<p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
+    your browser</a> to improve your experience.</p>
+<![endif]-->
+
+<div class="vertical-center">
+
+    <div class="container container-main">
+
+        <div id="carousel" class="carousel slide">
+            <div class="carousel-inner" role="listbox">
+
+                <div class="carousel-item active">
+                    <div class="carousel-container">
+                        <div class="jumbotron header1">
+                            <img class="img-fluid" src="img/sun.jpg">
+                        </div>
+
+                        <div class="main-content">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="form-group">
+                                            <label for="location">Your location</label>
+                                            <input type="text" class="form-control" id="location"
+                                                   placeholder="Your location"
+                                                   value="Belgrade, Serbia">
+                                            <p class="form-text text-muted">We have detected your location through your
+                                                browser</p>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="houseSize">Your house size (sqm)</label>
+                                            <input type="text" class="form-control" id="houseSize"
+                                                   placeholder="Your house size (sqm)"
+                                                   value="100">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="householdMembers">Number of household members</label>
+                                            <input type="text" class="form-control" id="householdMembers"
+                                                   placeholder="Number of household members" value="2">
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="rooftopSurface">Available rooftop surface (sqm)</label>
+                                            <input type="text" class="form-control" id="rooftopSurface"
+                                                   placeholder="Available rooftop surface (sqm)" value="70">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 align-self-end">
+                                        <div class="form-group">
+                                            <button id="calculateButton" type="button"
+                                                    class="btn btn-primary form-control calculate-button"
+                                                    onclick="nextSlide(); return false;">Calculate
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-container">
+                        <div class="jumbotron header2">
+                            <h1 class="text-center">Can you go Solar?</h1>
+                            <p class="lead text-center">Check how many panels your need for your household</p>
+                        </div>
+
+                        <div class="main-content">
+                            <form>
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <p class="font-weight-bold">Based on your location and home size we
+                                            recommend:</p>
+                                        <div class="form-group">
+                                            <label for="solarPanelSize">Solar panel size (sqm)</label>
+                                            <input type="text" class="form-control" id="solarPanelSize"
+                                                   value="25" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="batteryPacks">Battery packs</label>
+                                            <input type="text" class="form-control" id="batteryPacks"
+                                                   value="2" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="solarShare">Share of your HH needs covered by solar</label>
+                                            <input type="text" class="form-control" id="solarShare"
+                                                   value="50%" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="investment">Total investment (USD)</label>
+                                            <input type="text" class="form-control" id="investment"
+                                                   value="30.000" disabled>
+                                        </div>
+                                        <div class="form-group">
+                                            <label for="returnOfInvestment">Return of investment from electricity
+                                                savings</label>
+                                            <input type="text" class="form-control" id="returnOfInvestment"
+                                                   value="8 years" disabled>
+                                        </div>
+                                    </div>
+
+                                    <div class="col-md-6 align-self-end">
+                                        <p class="font-weight-bold">This is how it may look on your home:</p>
+                                        <div class="text-center preview-image">
+                                            <img src="img/home.png" class="img-thumbnail">
+                                        </div>
+                                        <div class="form-group">
+                                            <button id="calculateButton2" type="button"
+                                                    class="btn btn-primary form-control calculate-button"
+                                                    onclick="nextSlide(); return false;">Optimal use
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="carousel-item">
+                    <div class="carousel-container">
+                        <div class="jumbotron header2">
+                            <h1 class="text-center">Can you go Solar?</h1>
+                            <p class="lead text-center">Check how many panels your need for your household</p>
+                        </div>
+
+                        <div class="main-content">
+                            <div class="row">
+                                <div class="col align-self-center">
+                                    <div class="text-center">
+                                        <img class="img-fluid" src="img/optimal_use.jpg">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
+
+<script>
+
+    nextSlide = function () {
+        $('#carousel').carousel('next');
+    };
+
+    $('#carousel').carousel({
+        interval: false
+    })
+
+</script>
+<!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt;-->
+<!--<script src="js/vendor/jquery-1.12.4.min.js"></script>-->
+<!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt;-->
+<!--<script src="js/vendor/bootstrap.min.js"></script>-->
+<!--<script src="js/plugins.js"></script>-->
+<!--<script src="js/main.js"></script>-->
+
+</body>
+</html>
