@@ -1,192 +1,390 @@
 <!doctype html>
-<html class="no-js" lang="">
+<html lang="en" class="no-js">
 <head>
-    <meta charset="utf-8">
-    <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-
-    <title>GoSolar</title>
-    <meta name="description" content="">
-
-    <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <!-- Place favicon.ico in the root directory -->
-
-    <!-- Bootstrap -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css">
-
-    <!--<link rel="stylesheet" href="css/normalize.css">-->
-    <link rel="stylesheet" href="css/main.css">
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	<title>GoSolar | Official Website</title>
+	<meta name="description" content="" />
+	<meta name="keywords" content="" />
+	<meta name="author" content="gulanone" />
+	<meta name="contact" content="GoSolar | +381-xx-xx-xx-xxx" />
+	<meta name="copyright" content="GoSolar | Official Website" />
+	<link rel="icon" href="img/gosolar.ico" />
+	<meta property="og:title" content="GoSolar | Official Website" />
+	<meta property="og:site_name" content="GoSolar | Official Website" />
+	<meta property="og:description" content="" />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://www.gosolar.com/" />
+	<meta property="og:image" content="img/gosolar-og-image.jpg" />
+	<link rel="stylesheet" href="css/bootstrap.min.css" />
+	<link rel="stylesheet" href="css/reset.css" /> <!-- CSS reset -->
+	<link rel="stylesheet" href="css/custom.css" /> <!-- Resource style -->
+	<link rel="stylesheet" href="css/font-awesome.min.css" /> <!-- Font Awesome -->
+    <link rel="stylesheet" href="css/swiper.min.css" /> <!-- Link Swiper's CSS -->
+	<link rel="stylesheet" type="text/css" href="css/animate.css"> <!-- Animate CSS -->
 </head>
 <body>
-<!--[if lt IE 8]>
-<p>You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade
-    your browser</a> to improve your experience.</p>
-<![endif]-->
+	<!-- Loading -->
+	<div id='loading-overlay'>
+		<div class="cssload-loader"></div>
+		<div class="natips-loader">
+			<h1 class="logo-loading-text">GoSolar</h1>
+		</div>
+	</div>
+	<!-- / Loading -->
+	<!-- Top header -->
+	<div id="header-top" class="top-div-none">
+		<div class='text-right'>
+			<span class='top-div-span'>
+				<i class="fa fa-map-marker"></i> Some adress, Location
+			</span>
+			<span class='top-div-span'>
+				|
+			</span>	
+			<span class='top-div-span'>
+				<i class="fa fa-mobile"></i> +381-xx-xx-xx-xx
+			</span>	
+		</div>
+	</div>
+	<!-- / Top header -->
+	<!-- Header -->
+	<header class="fixed-position">
+		<div class="cd-logo cd-logo-scroll"><a id='logo' href="#home"><img id='logo-img' class="logo-img-scroll" src="img/gosolar-logo-full.png" alt="GoSolar Logo"></a></div>
+		<nav class="cd-main-nav-wrapper">
+			<ul class="cd-main-nav">
+				<li><a href="#home">Home</a></li>
+				<li><a href="#first-step">Can you go solar?</a></li>
+				<li><a href="#second-step">What do you need</a></li>
+				<li><a href="#final-step">How to use solar</a></li>
+				<li><a href="#about">About us</a></li>
+			</ul> <!-- .cd-main-nav -->
+		</nav> <!-- .cd-main-nav-wrapper -->
+		<a href="#projects" class="cd-nav-trigger"><!-- Menu --><span></span></a>
+	</header>
+	<!-- / Header -->
+	
+	<!-- Main content -->
+	<main class="cd-main-content cd-main-content-new-style">
+		
+		<!-- home -->
+		<section id="home" class="content-90 first-content">
+			<!-- Swiper -->
+			<div class="swiper-container">
+				<div class="swiper-wrapper">
+					<div class="swiper-slide swiper-slide1"></div>
+					<div class="swiper-slide swiper-slide2"></div>
+					<div class="swiper-slide swiper-slide3"></div>
+					<div class="swiper-slide swiper-slide4"></div>
+				</div>
+			</div>	
+			<!-- / Swiper -->
+			<!-- ARROW BOUNCING -->
+			<div class="container">
+				<a href="#first-step">
+					<div class="arrow1 bounce1">
+					</div>
+				</a>
+			</div>	
+			<!-- / ARROW BOUNCING -->	
+			<!-- GoSolar Logo Sign -->
+			<div class="gosolar-logo-sign">
+				<h1 class="gosolar-sign"><span class="first-element">go</span>solar</h1>
+			</div>
+			<!-- / GoSolar Logo Sign -->
+		</section>
+		<!-- / home -->
+		
+			<!-- Section divider 1 -->
+			<div class="green-background-sector gbs-style">
+				<div class="green-sector gs-style no-left-right-padding text-center">
+					<div class="container">
+						<p class="sector-content hidden-post revealOnScroll" data-animation="fadeInUp" data-timeout="200">
+							With go solar you can check how to switch your household electricty consumption with solar energy in just few clicks
+						</p>
+						<p class="sector-content hidden-post revealOnScroll" data-animation="fadeInUp" data-timeout="200">
+							save money - <mark class='mark-style'>save</mark> planet
+						</p>
+					</div>		
+				</div>
+				<div class="content-divider-arrow">
+					<!-- Separator -->
+					<svg class="separator transparent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path class="newgreen2" d="M0 0 L50 100 L100 0 Z"></path>
+					</svg>
+					<!-- /Separator -->
+				</div>
+			</div>
+			<!-- / Section divider 1 -->
+			
+		<!-- first-step -->	
+		<section id="first-step" class="step content-100">
+			<div class="container">
+				<h1 class="text-center section-heading">Can you go <mark class='mark-style'>Solar</mark>?</h1>
+				<hr class="tall">
+				<p class="text-center section-content">
+					Solar energy is available everywhere on our planet, although some places definitely have more sunny days than other.
+				</p>
+				<p class="text-center section-content">
+					In order to calculate what part of your consumption you can switch to clean solar energy you should tell us your city and size of your household.
+				</p>
+				<div class="margin-top25">
+					<div class="row">
+						<div class="col-md-6 left">
+							<img src="img/marker.png">
+						</div>
+						<div class="col-md-6 area step1">
+						
 
-<div class="vertical-center">
+							<div class="right">
+								<form id="apply-form">
+									<div class="group has-value">      
+										<input id="location" type="text" required value="Belgrade, Serbia">
+										<span class="highlight"></span>
+										<span class="bar"></span>
+										<label>Your location</label>
+									</div>
+									<div class="group has-value">      
+										<input id="householdBDs" type="number" required value="3" min="1" max="8">
+										<span class="highlight"></span>
+										<span class="bar"></span>
+										<label>Your house size (bedrooms)</label>
+									</div>
+									<div class="submit-button">
+										<a id="calculate" class="button glow-button" href="#second-step">calculate</a>
+									</div>
+								</form>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+				<div class='bottom-space'>
+				</div>
+			</div>
+		</section>
+		<!-- / first-step -->
+			
+			<!-- Section divider 2 -->
+			<div class="content-divider1 cd-style">
+				<div class="container">
+					<h1 class="text-center cd-content-style hidden-post revealOnScroll" data-animation="fadeInUp" data-timeout="200">
+						Yes you can!<br>Check below how many panels you would need
+					</h1>
+					<div class="content-divider-arrow">
+						<!-- Separator -->
+						<svg class="separator transparent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path class="newgreen" d="M0 0 L50 100 L100 0 Z"></path>
+						</svg>
+						<!-- / Separator -->
+					</div>
+				</div>
+			</div>
+			<!-- / Section divider 2 -->
+		
+		<!-- second-step -->	
+		<section id="second-step" class="step content-100">
+			<div class="container">
+				<h1 class="text-center section-heading">What you need to go solar</h1>
+				<hr class="tall">
+				<p class="text-center section-content">
+					Based on your location and household size we recommend for you:
+				</p>
+				<div class="margin-top25">
+					<div class="row">
+						<div class="col-md-6 left">
+							<img src="img/Solar-house1.jpg">
+						</div>
+						<div class="col-md-6 area step1">
+						
 
-    <div class="container container-main">
+							<div class="right">
+								<form id="apply-form">
+									<div class="group has-value">      
+										<input id="panelSize" type="text" required value="25">
+										<span class="highlight"></span>
+										<span class="bar"></span>
+										<label>Solar panel size (sqm)</label>
+									</div>
+									<div class="group has-value">      
+										<input id="batteryPacks" type="text" required value="2">
+										<span class="highlight"></span>
+										<span class="bar"></span>
+										<label>Battery packs</label>
+									</div>
+									<div class="group has-value">      
+										<input id="coverage" type="text" required value="50%">
+										<span class="highlight"></span>
+										<span class="bar"></span>
+										<label>Share of your HH needs covered by solar</label>
+									</div>
+									<div class="group has-value">      
+										<input id="investment" type="text" required value="30.000">
+										<span class="highlight"></span>
+										<span class="bar"></span>
+										<label>Total investment (USD)</label>
+									</div>
+									<div class="group has-value">      
+										<input id="returnOfInvestment" type="text" required value="8 years">
+										<span class="highlight"></span>
+										<span class="bar"></span>
+										<label>Return of investment from electricity savings</label>
+									</div>
+									<div class="submit-button">
+										<a class="button glow-button" href="#final-step">solar energy tips</a>
+									</div>
+								</form>
+							</div>
+						
+						</div>
+					</div>
+				</div>
+				<p class="text-center section-content" data-animation="fadeInUp" data-timeout="200">
+					You may be wondering how much it would cost to buy and install solar panel system and would it pay off on a long run.
+					That’s why we calculated for you approximate investment you would need to make to gosolar, as well as, in how many years your investment would pay off through savings on electricity bills.
+					After that point in time, you would be only saving money while saving the planet.
+				</p>
+				<div class='bottom-space'>
+				</div>
+			</div>
+		</section>
+		<!-- / second-step -->	
+			
+			<!-- Section divider 3 -->
+			<div class="green-background-sector-3 gbs-style">
+				<div class="green-sector gs-style no-left-right-padding text-center">
+					<div class="container">
+						<p class="sector-content hidden-post revealOnScroll" data-animation="fadeInUp" data-timeout="200">
+							Ever wondered what’s optimal way to use solar energy?
+						</p>
+					</div>		
+				</div>
+				<div class="content-divider-arrow">
+					<!-- Separator -->
+					<svg class="separator transparent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+						<path class="newgreen2" d="M0 0 L50 100 L100 0 Z"></path>
+					</svg>
+					<!-- /Separator -->
+				</div>
+			</div>
+			<!-- / Section divider 3 -->
+		
+		<!-- final-step -->		
+		<section id="final-step" class="step content-100">
+			<div class="container">
+				<h1 class="text-center section-heading">How to use solar</h1>
+				<hr class="tall">
+				<div class="margin-top25">
+					<div class="row">
+						<div class="col-md-12 left"> 
+							<img src="img/optimal_use.jpg"/>
+						</div>
+					</div>
+				</div>
+				<p class="text-center section-content">
+					Once you install solar panels in your household you should understand how to optimally use solar energy.
+					Since most of the solar energy is produced during midday hours, that’s ideal time to use appliances that consume a lot of energy – such as dishwashers, washing machines and water heaters.
+					Of course you can use them in any time of the day if you have batteries that stored solar energy for later usage.
+					On the other hand in the morning and in the evening when there is little or no solar energy produced and you will rely on energy stored in battery and it would be best to use lower power appliances such as desktops, laptops, tv or lights for book reading.
+				</p>
+				<div class='bottom-space'>
+				</div>
+			</div>
+		</section>
+		<!-- / final-step -->
+			
+			<!-- Section divider 4 -->
+			<div class="content-divider1 cd-style">
+				<div class="container">
+					<h1 class="text-center cd-content-style hidden-post revealOnScroll" data-animation="fadeInUp" data-timeout="200">
+						Who are <mark class='mark-style'>we</mark>?
+					</h1>
+					<div class="content-divider-arrow">
+						<!-- Separator -->
+						<svg class="separator transparent" xmlns="http://www.w3.org/2000/svg" version="1.1" width="100%" height="100%" viewBox="0 0 100 100" preserveAspectRatio="none">
+							<path class="newgreen" d="M0 0 L50 100 L100 0 Z"></path>
+						</svg>
+						<!-- / Separator -->
+					</div>
+				</div>
+			</div>
+			<!-- / Section divider 4 -->
+			
+		<!-- about -->	
+		<section id="about" class="step content-100">
+			<div class="container">
+				<h1 class="text-center section-heading">About us</h1>
+				<hr class="tall">
+				<p class="text-center section-content">
+					Group of enthusiasts gathered around idea to bring solar energy closer to people
+				</p>
+				<div class="margin-top25">
+					<div class="at-grid" data-column="3">
+						<!-- user1 -->
+						<div class="at-column">
+						  <div class="at-user">
+							<div class="at-user__avatar"><img src="img/Ivan.jpg"/></div>
+							<div class="at-user__name">Ivan Stanić</div>
+							<div class="at-user__title"></div>
+						  </div>
+						</div>
+						<!-- / user1 -->
+						<!-- user2 -->
+						<div class="at-column">
+						  <div class="at-user">
+							<div class="at-user__avatar"><img src="img/Marko.jpg"/></div>
+							<div class="at-user__name">Marko Kaznovac</div>
+							<div class="at-user__title"></div>
+						  </div>
+						</div>
+						<!-- / user2 -->
+						<!-- user3 -->
+						<div class="at-column">
+						  <div class="at-user">
+							<div class="at-user__avatar"><img src="img/Milica.jpg"/></div>
+							<div class="at-user__name">Milica Stanić</div>
+							<div class="at-user__title"></div>
+						  </div>
+						</div>
+						<!-- / user3 -->
+						<!-- user4 -->
+						<div class="at-column">
+						  <div class="at-user">
+							<div class="at-user__avatar"><img src="img/Ivana.jpg"/></div>
+							<div class="at-user__name">Ivana Subotić</div>
+							<div class="at-user__title"></div>
+						  </div>
+						</div>
+						<!-- / user4 -->
+						<!-- user5 -->
+						<div class="at-column">
+						  <div class="at-user">
+							<div class="at-user__avatar"><img src="img/Slobodan.jpg"/></div>
+							<div class="at-user__name">Slobodan Papak</div>
+							<div class="at-user__title"></div>
+						  </div>
+						</div>
+						<!-- / user5 -->
+					</div>
+				</div>
+			</div>	
+		</section>
+		<!-- / about -->
 
-        <div id="carousel" class="carousel slide">
-            <div class="carousel-inner" role="listbox">
+		<!-- Footer -->
+		<footer class="clearfix">
+			<div class="pull-left footer-style">
+				<span class="pull-left">Copyright © 2017 GoSolar. All rights reserved.</span>
+		  </div>  
+		</footer>
+		<!-- / Footer -->
 
-                <div class="carousel-item active">
-                    <div class="carousel-container">
-                        <div class="jumbotron header1">
-                            <img class="img-fluid" src="img/sun.jpg">
-                        </div>
-
-                        <div class="main-content">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <div class="form-group">
-                                            <label for="location">Your location</label>
-                                            <input type="text" class="form-control" id="location"
-                                                   placeholder="Your location"
-                                                   value="Belgrade, Serbia">
-                                            <p class="form-text text-muted">We have detected your location through your
-                                                browser</p>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="houseSize">Your house size (sqm)</label>
-                                            <input type="text" class="form-control" id="houseSize"
-                                                   placeholder="Your house size (sqm)"
-                                                   value="100">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="householdMembers">Number of household members</label>
-                                            <input type="text" class="form-control" id="householdMembers"
-                                                   placeholder="Number of household members" value="2">
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="rooftopSurface">Available rooftop surface (sqm)</label>
-                                            <input type="text" class="form-control" id="rooftopSurface"
-                                                   placeholder="Available rooftop surface (sqm)" value="70">
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 align-self-end">
-                                        <div class="form-group">
-                                            <button id="calculateButton" type="button"
-                                                    class="btn btn-primary form-control calculate-button"
-                                                    onclick="nextSlide(); return false;">Calculate
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-container">
-                        <div class="jumbotron header2">
-                            <h1 class="text-center">Can you go Solar?</h1>
-                            <p class="lead text-center">Check how many panels your need for your household</p>
-                        </div>
-
-                        <div class="main-content">
-                            <form>
-                                <div class="row">
-                                    <div class="col-md-6">
-                                        <p class="font-weight-bold">Based on your location and home size we
-                                            recommend:</p>
-                                        <div class="form-group">
-                                            <label for="solarPanelSize">Solar panel size (sqm)</label>
-                                            <input type="text" class="form-control" id="solarPanelSize"
-                                                   value="25" disabled>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="batteryPacks">Battery packs</label>
-                                            <input type="text" class="form-control" id="batteryPacks"
-                                                   value="2" disabled>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="solarShare">Share of your HH needs covered by solar</label>
-                                            <input type="text" class="form-control" id="solarShare"
-                                                   value="50%" disabled>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="investment">Total investment (USD)</label>
-                                            <input type="text" class="form-control" id="investment"
-                                                   value="30.000" disabled>
-                                        </div>
-                                        <div class="form-group">
-                                            <label for="returnOfInvestment">Return of investment from electricity
-                                                savings</label>
-                                            <input type="text" class="form-control" id="returnOfInvestment"
-                                                   value="8 years" disabled>
-                                        </div>
-                                    </div>
-
-                                    <div class="col-md-6 align-self-end">
-                                        <p class="font-weight-bold">This is how it may look on your home:</p>
-                                        <div class="text-center preview-image">
-                                            <img src="img/home.png" class="img-thumbnail">
-                                        </div>
-                                        <div class="form-group">
-                                            <button id="calculateButton2" type="button"
-                                                    class="btn btn-primary form-control calculate-button"
-                                                    onclick="nextSlide(); return false;">Optimal use
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-
-                <div class="carousel-item">
-                    <div class="carousel-container">
-                        <div class="jumbotron header2">
-                            <h1 class="text-center">Can you go Solar?</h1>
-                            <p class="lead text-center">Check how many panels your need for your household</p>
-                        </div>
-
-                        <div class="main-content">
-                            <div class="row">
-                                <div class="col align-self-center">
-                                    <div class="text-center">
-                                        <img class="img-fluid" src="img/optimal_use.jpg">
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-            </div>
-        </div>
-
-    </div>
-</div>
-
-
-<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js"></script>
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js"></script>
-
-<script>
-
-    nextSlide = function () {
-        $('#carousel').carousel('next');
-    };
-
-    $('#carousel').carousel({
-        interval: false
-    })
-
-</script>
-<!--&lt;!&ndash; jQuery (necessary for Bootstrap's JavaScript plugins) &ndash;&gt;-->
-<!--<script src="js/vendor/jquery-1.12.4.min.js"></script>-->
-<!--&lt;!&ndash; Include all compiled plugins (below), or include individual files as needed &ndash;&gt;-->
-<!--<script src="js/vendor/bootstrap.min.js"></script>-->
-<!--<script src="js/plugins.js"></script>-->
-<!--<script src="js/main.js"></script>-->
-
+	</main>
+	<!-- / Main content -->
+		
+<script src="js/jquery-2.1.1.js"></script> <!-- jQuery -->
+<script src="js/swiper.min.js"></script> <!-- Swiper JS -->
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+<script src="js/bootstrap.min.js"></script> <!-- Bootstrap -->
+<script src="js/modernizr.js"></script> <!-- Modernizr -->
 </body>
 </html>
